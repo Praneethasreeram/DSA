@@ -30,8 +30,8 @@ class Solution {
 
 
         }
-        if(maxVal>nums.length-1)
-        {
+         if(maxVal>nums.length-1)
+         {
             res=true;
         }
         return res;
