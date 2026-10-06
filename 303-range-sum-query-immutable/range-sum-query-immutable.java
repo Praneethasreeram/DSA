@@ -13,19 +13,22 @@ class NumArray {
     
     public int sumRange(int left, int right) {
 
-       int res=0;
-       for(int i=right;i>=left;i--)
-       {
-         if(i!=0)
-         {
-          res=res+pre[i]-pre[i-1];
-         }
-         else
-         {
-            res+=pre[i];
-         }
-       }
-        return res;
+    //    int res=0;
+    //    for(int i=right;i>=left;i--)
+    //    {
+    //      if(i!=0)
+    //      {
+    //       res=res+pre[i]-pre[i-1];
+    //      }
+    //      else
+    //      {
+    //         res+=pre[i];
+    //      }
+    //    }
+     if(left>0)
+        return pre[right]-pre[left-1];
+        else
+            return pre[right];
     }
 }
 
